@@ -1,0 +1,27 @@
+.home{
+display: flex;
+justify-content: space-between;
+
+}
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.cards_days{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:1200px) {
+.cards_days{
+       flex-wrap: wrap;
+       justify-content: space-around;
+    }
+}
+
+.button__lang_body{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}

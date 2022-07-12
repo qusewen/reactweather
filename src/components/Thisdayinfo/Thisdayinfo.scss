@@ -1,0 +1,94 @@
+.Thisdayinfo{
+    background: linear-gradient(180deg, rgb(33 112 255), rgb(247, 191, 177)) !important;
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 20px;
+    padding: 49px 39px;
+    display: flex;
+    align-items: center;
+    width: 55%;
+
+    .wrapper_info{
+        width: 100%;
+       position: relative;
+
+    }
+    }
+    .temp,
+    .pressure,
+    .precipitation,
+    .wind{
+        display: flex;
+    }
+    .weather_img{
+        margin:0 26px 12px 0;
+        width: 25px;
+        padding: 10px;
+        border-radius: 50%;
+        background: #FFFFFF;
+box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+    }
+    .weather__info_title{
+        margin-right: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 17px;
+        color: #ffffff;
+        text-align: left;
+    }
+    .weather__info_subtitle{
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 17px;
+        color: #041f4d;
+        z-index: 5;
+    }
+    .cloud__img{
+        position: absolute;
+        z-index: 0;
+        top: -49px;
+        right: -40px;
+}
+
+@media (max-width:850px) {
+    .Thisdayinfo{
+    width: 90%;
+    }
+    .date{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:800px) {
+    .Thisdayinfo{
+    width: 75%;
+    }
+    .date{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:615px) {
+    .Thisdayinfo{
+        width: 90%;
+        padding: 49px 13px;
+        
+    }
+    .temp,
+    .pressure,
+    .precipitation,
+    .wind{
+        flex-wrap: wrap;
+    }
+    .cloud__img{
+        display: none;
+    }
+    .date{
+        width: 80%;
+    }
+
+    .date .temp__body .temp{
+        margin-right: 5px;
+    }
+    .date .temp__body{
+        flex-direction: column;
+        align-items: center;
+    }
+}

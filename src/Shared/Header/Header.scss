@@ -1,0 +1,30 @@
+.header{
+    margin:  auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    .header__body{
+        display: flex;
+        align-items: center;
+        .header__logo{
+            margin-right:20px;
+        }
+        .header__title{
+            color: rgb(0, 47, 255);
+        }
+        .header__theme{
+            margin-right: 20px;
+        }
+       
+    }
+}
+
+@media (max-width:700px) {
+.header{
+    flex-direction: column;
+}
+.header__body:first-child{
+    margin-bottom: 20px;
+}
+}

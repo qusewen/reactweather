@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root{
+  --bacgraund-color:white;
+}
+
+
+
+
+[data-theme='dark']{
+  --bacgraund-color:rgb(0, 0, 0);
+  --bg-col2:white;
+  --bg-input: white;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bacgraund-color);
+}
+
+.app{
+  background-color: var(--bacgraund-color);
+  padding-bottom: 325px;
+}
+
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+  background-color:var(--bg-col2) ;
+}
